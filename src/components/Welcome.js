@@ -7,7 +7,7 @@ class Welcome extends React.Component {
     return (
       <React.Fragment >
         <div className='welcomeContainer'> 
-            <p id="text">Louie O'Grady <span className="teal">software developer and artist based in London, UK.</span></p>
+            <p id="text">Louie O'Grady <span className="teal">software developer and artist based in London, UK</span></p>
         </div>
       </React.Fragment>
 

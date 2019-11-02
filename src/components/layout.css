@@ -16,11 +16,10 @@ body {
 .layout {
   overflow: hidden;
   display: grid;
-  grid-template-columns: 30vh 150vh;
+  grid-template-columns: 34vh 162vh;
 }
 
 .content {
-  padding: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -31,10 +30,20 @@ body {
   padding: 2rem;
 }
 
+.homeLink {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+.homeLink:hover {
+  color: #34ebba;
+}
+
 .nav-link {
   font-family: 'Roboto', sans-serif;
   color: white;
-  font-size: 3vh;
+  font-size: 4.8vh;
   text-decoration: none;
 }
 

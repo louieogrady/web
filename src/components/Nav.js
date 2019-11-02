@@ -7,35 +7,38 @@ class Nav extends React.Component {
   render() {
     return (
       <React.Fragment>
-      <div className="nav-flex-column">
-        <nav>
-        {/* <img src={logo} alt='logo'/> */}
-
-          <a className="nav-link" href="page-2">
-            about
+        <div className="nav-flex-column">
+          <nav>
+            {/* <img src={logo} alt='logo'/> */}
+            <a className="nav-link" href="/">
+              home
           </a>
-          <br></br>
-          <a className="nav-link" href="#">
-            projects
+            <br></br>
+            <a className="nav-link" href="/about">
+              about
           </a>
-          <br></br>
-          <a className="nav-link" href="#">
-            employment
+            <br></br>
+            <a className="nav-link" href="#">
+              projects
           </a>
-          <br></br>
-          <a className="nav-link" href="#">
-            education
+            <br></br>
+            <a className="nav-link" href="employment">
+              employment
           </a>
-          <br></br>
-          <a className="nav-link" href="https://www.github.com/louieogrady">
-            github
+            <br></br>
+            <a className="nav-link" href="#">
+              education
           </a>
-          <br></br>
-          <a className="nav-link" href="https://www.linkedin.com/in/louieogrady">
-            linkedin
+            <br></br>
+            <a className="nav-link" href="https://www.github.com/louieogrady">
+              github
           </a>
-        </nav>
-      </div>
+            <br></br>
+            <a className="nav-link" href="https://www.linkedin.com/in/louieogrady">
+              linkedin
+          </a>
+          </nav>
+        </div>
       </React.Fragment>
     )
   }
