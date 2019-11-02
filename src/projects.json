@@ -1,0 +1,16 @@
+[
+  {
+    "title": "logo",
+    "slug": "logo",
+    "url": "https://example.com",
+    "image": "images/logo.svg",
+    "description": "My logo"
+  },
+  {
+    "title": "logo",
+    "slug": "logo",
+    "url": "https://example.com",
+    "image": "images/logo.svg",
+    "description": "My logo"
+  }
+]
