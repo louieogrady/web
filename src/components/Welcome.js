@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import './welcome.css';
 
 class Welcome extends React.Component {

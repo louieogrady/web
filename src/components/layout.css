@@ -47,8 +47,28 @@ body {
   text-decoration: none;
 }
 
+.github:hover {
+  filter: brightness(76.5%) sepia(50) saturate(95) hue-rotate(115deg);
+}
+
+.linkedin:hover {
+  filter: brightness(76.5%) sepia(50) saturate(95) hue-rotate(115deg);
+}
+
 .nav-link:hover {
   color: #34ebba
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1544px) {
+  .layout {
+    grid-template-columns: 34vh 100vh;
+  }
+}
+
+@media only screen and (min-width : 1545px) and (max-width : 2448px) {
+  .layout {
+    grid-template-columns: 34vh 141vh;
+  }
 }
 
 @media only screen and (max-width : 320px) {

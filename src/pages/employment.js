@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import './employment.css';
 
-const SecondPage = () => (
+const Employment = () => (
   <Layout>
     <SEO title="employment" />
     <div className="employmentContainer"> 
@@ -13,4 +13,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default Employment
