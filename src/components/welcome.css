@@ -20,14 +20,67 @@
     color: #34ebba;
     margin: 0;
     padding: 0;
-    font-size: 17vh;
-    width: 100%;
+    font-size: 9vw; 
     opacity: 1;
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 5s;
 }
+
+/* @media only screen and (min-width : 1400px) {
+    .welcomeContainer {
+        width: 92%
+    }    
+    .welcomeContainer span{
+        font-size: 14vh;
+    }
+}
+
+@media only screen and (min-width : 1265px) and (max-width : 1440px) {
+    .welcomeContainer {
+        width: 84%
+    }    
+    .welcomeContainer span{
+        font-size: 13vh;
+    }
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1264px) {
+    .welcomeContainer {
+        width: 80%
+    }    
+    .welcomeContainer span{
+        font-size: 13vh;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+    .welcomeContainer {
+        width: 80%
+    }    
+    .welcomeContainer span{
+        font-size: 13vh;
+    }
+}
+
+@media only screen and (min-width : 425px) and (max-width : 767px) {
+    .welcomeContainer {
+        width: 45%
+    }    
+    .welcomeContainer span{
+        font-size: 12vh;
+    }
+}
+
+@media only screen and (min-width : 0px) and (max-width : 424px) {
+    .welcomeContainer {
+        width: -1%
+    }    
+    .welcomeContainer span{
+        font-size: 12vh;
+    }
+} */
 
 
 @keyframes fadeInOpacity {

@@ -5,3 +5,85 @@
  */
 
 // You can delete this file if you're not using it
+
+let projects = [{
+    name: 'The Truth about The Hague',
+    subInfo: 'Galerija Miroslav Kraljevic, Zagreb – Jun 2014-Oct 2015',
+    description: "Card game/installation. Part of ‘Shame on You’ cross-Balkan collaboration project. Research residency in 2014 led to new work made and exhibited as part of 'Avoiding Eye Contact' exhibition at the gallery in 2015. www.g-mk.hr",
+    photos: ''
+},
+{
+    name: 'CCCS – an archive',
+    subInfo: 'Birmingham University / “CCCS 50 Years On” exhibition, MAC Birmingham, UK – Jan-May 2014', 
+    description: '6-month residency project with the archive of the Centre for Contemporary Cultural Studies. Outcomes include a pamphlet series, installation, performance-intervention, public discussion and a blog. www.cccs-anarchive.tumblr.com',
+    photos: ''
+},
+{
+    name: 'Shortcuts through Sønderjylland-Schleswig',
+    subInfo: 'Aabenraa Artweek, Denmark – August 2013',
+    description: 'Installation. Photograph series and binaural audio. Made during a residency in Denmark and Germany, www.artweek.dk',
+    photos: ''
+},
+{
+    name: 'Stillaphone',
+    subInfo: 'Brass: Pitch, International Brass Festival, Durham – July 2013',
+    description: 'Large-scale sitespecific acoustic installation, commissioned as part of a festival of brass music. www.brassfestival.co.uk',
+    photos: ''
+},
+{
+    name: 'Call and Response', 
+    subInfo: "'3 Days Without Water' exhibition, Piccadilly Place, Manchester – August 2012",
+    description: 'Sound sculpture made on a mini-residency with 8 other artists in an empty retail unit for Rochdale Canal Festival.',
+    photos: ''
+},
+{
+    name: 'Another time in the same place at the same time in another place',
+    subInfo: "Schiume Festival, Venice – June 2012",
+    description: "A dramatic, site-specific 'invisible' performance that surrounds an audience of one at a time (binaural audio/sculpture), made and experienced in a Napoleonic storehouse at Forte Marghera, on the festival theme of 'conflict'.",
+    photos: ''
+},
+{
+    name: 'Back Stowell Street', 
+    subInfo: "'Borders: A Space Between', Situation Rhubarb, Newcastle – Feb 2012",
+    description: 'Site-specific invisible performance/installation exploring the subject of borders, using binaural recordings and materials found from the site. Made in residence at Morden Tower, situated on the old city walls bordering Chinatown.',
+    photos: ''
+},
+{
+    name: 'Ambonezenbosje',
+    subInfo: "'RE:P.A.I.R.' residency, PeerGrouP, Ambonezenbosje (Oldambt), Netherlands – July 2011",
+    description: 'Residency resulting in collaboration with local communities on a series of short films, presented on site in the woods.',
+    photos: ''
+},
+{
+    name: "If we stop now, they'll crush us like bedbugs!", 
+    subInfo: "Wyspa Progress Foundation, Gdansk Shipyard, Poland – May 2011",
+    description: 'Month-long residency culminating in a site-specific installation with multichannel soundtrack exploring the role of women in the shipyard strike of 1980 and surrounding events. www.postindustrialrevolution.eu',
+    photos: ''
+},
+{
+    name: 'Ambonezenbosje',
+    subInfo: "'RE:P.A.I.R.' residency, PeerGrouP, Ambonezenbosje (Oldambt), Netherlands – July 2011",
+    description: 'Residency resulting in collaboration with local communities on a series of short films, presented on site in the woods.',
+    photos: ''
+},]
+
+exports.createPages = async ({ actions: { createPage } }) => {
+    // `getPokemonData` is a function that fetches our data
+    const allPokemon = await getPokemonData(["pikachu", "charizard", "squirtle"])
+  
+    // Create a page that lists all Pokémon.
+    createPage({
+      path: `/`,
+      component: require.resolve("./src/templates/all-pokemon.js"),
+      context: { allPokemon },
+    })
+  
+    // Create a page for each Pokémon.
+    allPokemon.forEach(pokemon => {
+      createPage({
+        path: `/pokemon/${pokemon.name}/`,
+        component: require.resolve("./src/templates/pokemon.js"),
+        context: { pokemon },
+      })
+    })
+  }

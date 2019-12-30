@@ -19,6 +19,19 @@ body {
   grid-template-columns: 34vh 162vh;
 }
 
+  /* @media only screen and (min-width : 1024px) and (max-width : 2695px) {
+    .layout {
+      grid-template-columns: 34vh 126vh;
+    }
+}
+
+@media only screen and (min-width : 2696px) {
+    .layout {
+      grid-template-columns: 34vh 170vh;
+    }
+} */
+
+
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -57,18 +70,6 @@ body {
 
 .nav-link:hover {
   color: #34ebba
-}
-
-@media only screen and (min-width : 768px) and (max-width : 1544px) {
-  .layout {
-    grid-template-columns: 34vh 100vh;
-  }
-}
-
-@media only screen and (min-width : 1545px) and (max-width : 2448px) {
-  .layout {
-    grid-template-columns: 34vh 141vh;
-  }
 }
 
 @media only screen and (max-width : 320px) {
