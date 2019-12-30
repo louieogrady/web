@@ -23,7 +23,7 @@ export default ({ pageContext: { allProjects } }) => (
         {allProjects.map(project => (
             <Link to={`/projects/${project.name}`}>
               {/* <img src={project.image} alt={project.name} /> */}
-              <p style={{color: randColor()}} onMouseEnter={event => onMouseOver(event)} id="projText">{project.name}</p>
+              <p style={{color: randColor(), marginBottom: '8px'}} onMouseEnter={event => onMouseOver(event)} id="projText">{project.name}</p>
             </Link>
         ))}
     </div>

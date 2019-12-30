@@ -42,7 +42,7 @@ const Education = () => (
           <p style={{color: randColor()}} className="educationText">{e.name}</p>
           <p style={{color: randColor()}} className="educationText">{e.dates}</p>
           <p style={{color: randColor()}} className="educationText">{e.subTitle}</p>
-          <p></p>
+          <p style={{marginBottom: '45px'}}></p>
         </div>
         )}
     </div>
