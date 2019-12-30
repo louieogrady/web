@@ -3,29 +3,44 @@ import React from "react"
 import github from "../images/Github-Mark-Light-32px.png"
 import linkedin from "../images/linkedin.png"
 
+function onMouseOver(event) {
+  const el = event.target;
+  let colors = ['#34ebba', '#b1dcff', '#ffc1cc', '#fff4c1', '#c1ccff', '#ffd5c1', '#c1fff4', '#ebba34', '#eb5e34', '#34c1eb'];
+  el.style.color = colors[Math.floor(Math.random() * colors.length)];
+}
+
+function onMouseOut(event) {
+  const el = event.target;
+  let white = "#ffffff";
+  el.style.color = white;
+};
+
+
+
+
 class Nav extends React.Component {
   render() {
     return (
       <React.Fragment>
         <div className="nav-flex-column">
           <nav>
-            <a className="nav-link" href="/">
+            <a className="nav-link" href="/" onMouseEnter={event => onMouseOver(event)} onMouseOut={event => onMouseOut(event)}>
               home
           </a>
             <br></br>
-            <a className="nav-link" href="/about">
+            <a className="nav-link" href="/about" onMouseEnter={event => onMouseOver(event)} onMouseOut={event => onMouseOut(event)}>
               about
           </a>
             <br></br>
-            <a className="nav-link" href="/proj">
+            <a className="nav-link" href="/proj" onMouseEnter={event => onMouseOver(event)} onMouseOut={event => onMouseOut(event)}>
               projects
           </a>
             <br></br>
-            <a className="nav-link" href="/employment">
+            <a className="nav-link" href="/employment" onMouseEnter={event => onMouseOver(event)} onMouseOut={event => onMouseOut(event)}>
               employment
           </a>
             <br></br>
-            <a className="nav-link" href="/education">
+            <a className="nav-link" href="/education" onMouseEnter={event => onMouseOver(event)} onMouseOut={event => onMouseOut(event)}>
               education
             </a>
             {/* <br></br>

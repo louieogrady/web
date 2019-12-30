@@ -30,6 +30,10 @@ a {
     animation-duration: 2s;
 }
 
+p:hover {
+    color: white;
+}
+
 
 @keyframes fadeInOpacity {
     0% {
