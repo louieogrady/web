@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
 
 export default ({ pageContext: { allProjects } }) => (
   <div style={{ width: 960, margin: '4rem auto' }}>
@@ -9,7 +10,7 @@ export default ({ pageContext: { allProjects } }) => (
         <li>
           <Link to={`/projects/${project.name}`}>
             {/* <img src={pokemon.sprites.front_default} alt={pokemon.name} /> */}
-            <p>{pokemon.name}</p>
+            <p>{project.name}</p>
           </Link>
         </li>
       ))}

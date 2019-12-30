@@ -6,7 +6,7 @@
 
 // You can delete this file if you're not using it
 
-let projects = [
+const projects = [
     {
         name: "Nature's Switch",
         subInfo: '2015/16',
@@ -111,13 +111,13 @@ exports.createPages = async ({ actions: { createPage } }) => {
   
     // Create a page that lists all Pokémon.
     createPage({
-      path: `/`,
+      path: `/projects`,
       component: require.resolve("./src/pages/projects.js"), // component: require.resolve("./src/templates/all-pokemon.js"), 
       context: { allProjects },
     })
   
     // Create a page for each Pokémon.
-    projects.forEach(project => {
+    allProjects.forEach(project => {
       createPage({
         path: `/projects/${project.name}/`,
         component: require.resolve("./src/pages/project.js"),
