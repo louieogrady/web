@@ -4,16 +4,17 @@ import SEO from "../components/seo"
 import { Link } from "gatsby"
 
 export default ({ pageContext: { allProjects } }) => (
-  <div style={{ width: 960, margin: '4rem auto' }}>
-    <ul style={{ padding: 0 }}>
-      {allProjects.map(project => (
-        <li>
-          <Link to={`/projects/${project.name}`}>
-            {/* <img src={pokemon.sprites.front_default} alt={pokemon.name} /> */}
-            <p>{project.name}</p>
-          </Link>
-        </li>
-      ))}
-    </ul>
-  </div>
+  <Layout>
+    <SEO title="projects" />
+    <div>
+        {allProjects.map(project => (
+          <p>
+            <Link to={`/projects/${project.name}`}>
+              {/* <img src={project.image} alt={project.name} /> */}
+              <p>{project.name}</p>
+            </Link>
+          </p>
+        ))}
+    </div>
+  </Layout>
 );

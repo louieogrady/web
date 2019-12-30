@@ -111,7 +111,7 @@ exports.createPages = async ({ actions: { createPage } }) => {
   
     // Create a page that lists all Pokémon.
     createPage({
-      path: `/projects`,
+      path: `/proj`,
       component: require.resolve("./src/pages/projects.js"), // component: require.resolve("./src/templates/all-pokemon.js"), 
       context: { allProjects },
     })

@@ -17,7 +17,7 @@ class Nav extends React.Component {
               about
           </a>
             <br></br>
-            <a className="nav-link" href="/projects">
+            <a className="nav-link" href="/proj">
               projects
           </a>
             <br></br>
