@@ -108,6 +108,7 @@ const projects = [
 exports.createPages = async ({ actions: { createPage } }) => {
     // `getPokemonData` is a function that fetches our data
     const allProjects = await projects;
+
   
     // Create a page that lists all Pokémon.
     createPage({

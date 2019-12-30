@@ -3,15 +3,41 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import './education.css';
 
+let education = [
+  {
+    name: 'Flatiron School, London',
+    dates: 'Feb 2019 - May 2019',
+    subTitle: 'Software Engineering Programme'
+  },
+  {
+    name: 'Manchester School of Art',
+    dates: 'Sept 2011 - Sept 2012',
+    subTitle: 'MRes Art (AHRC BGP Studentship Award)'
+  },
+  {
+    name: 'Royal Welsh College of Music',
+    dates: 'Sept 2005 - May 2009',
+    subTitle: 'BMus Music'
+  },
+  {
+    name: 'School of Sound Recording',
+    dates: 'Nov 2017 - Jan 2018',
+    subTitle: 'Audio for Games (Wwise & Unity)'
+  },
+]
+
 const Education = () => (
   <Layout>
     <SEO title="education" />
     <div className="educationContainer"> 
-      {/* <p className="employmentHeader">Software Development</p> */}
-      <p className="educationText">Flatiron School, London<br></br>Feb 2019 - May 2019<br></br>Software Engineering Programme</p>
-      <p className="educationText">Manchester School of Art<br></br>Sept 2011 - Sept 2012<br></br>MRes Art (AHRC BGP Studentship Award)</p>
-      <p className="educationText">Royal Welsh College of Music<br></br>Sept 2005 - May 2009<br></br>BMus Music</p>
-      <p className="educationText">School of Sound Recording<br></br>Nov 2017 - Jan 2018<br></br>Audio for Games (Wwise & Unity)</p>
+      {education.map((e) => 
+        <div>
+          <p style={{color: '#34ebba'}} className="educationText">{e.name}</p>
+          <p style={{color: '#ffc1cc'}} className="educationText">{e.dates}</p>
+          <p style={{color: 'white'}} className="educationText">{e.subTitle}</p>
+          <p></p>
+        </div>
+        )}
     </div>
   </Layout>
 )

@@ -4,6 +4,13 @@ import SEO from "../components/seo"
 import { Link } from "gatsby"
 import './projects.css';
 
+let colors = ['white', '#34ebba', '#ffc1cc'];
+
+function randColor() {
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
+
 export default ({ pageContext: { allProjects } }) => (
   <Layout>
     <SEO title="projects" />
@@ -11,7 +18,7 @@ export default ({ pageContext: { allProjects } }) => (
         {allProjects.map(project => (
             <Link to={`/projects/${project.name}`}>
               {/* <img src={project.image} alt={project.name} /> */}
-              <p className="projText">{project.name}</p>
+              <p style={{color: randColor()}} id="projText">{project.name}</p>
             </Link>
         ))}
     </div>
