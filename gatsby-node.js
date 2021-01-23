@@ -1,10 +1,4 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
-
-// You can delete this file if you're not using it
+import { slug } from "../components/functions";
 
 const projects = [
     {
@@ -105,24 +99,21 @@ const projects = [
     },
 ]
 
+
 exports.createPages = async ({ actions: { createPage } }) => {
-    // `getPokemonData` is a function that fetches our data
     const allProjects = await projects;
 
-  
-    // Create a page that lists all Pokémon.
     createPage({
-      path: `/proj`,
-      component: require.resolve("./src/pages/projects.js"), // component: require.resolve("./src/templates/all-pokemon.js"), 
-      context: { allProjects },
+        path: `/proj`,
+        component: require.resolve("./src/pages/projects.js"),
+        context: { allProjects },
     })
-  
-    // Create a page for each Pokémon.
+
     allProjects.forEach(project => {
-      createPage({
-        path: `/projects/${project.name}/`,
-        component: require.resolve("./src/pages/project.js"),
-        context: { project },
-      })
+        createPage({
+            path: `/projects/${slug(project.name)}/`,
+            component: require.resolve("./src/pages/project.js"),
+            context: { project },
+        })
     })
-  }
+}

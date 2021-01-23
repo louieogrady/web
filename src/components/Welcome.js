@@ -1,15 +1,14 @@
 import React from "react";
-import './welcome.css';
-
+import { randColor } from "../components/functions";
 class Welcome extends React.Component {
   render() {
     return (
-      <React.Fragment >
-        <div className='welcomeContainer'> 
-            <p id="text">Louie O'Grady <span className="teal">software developer and artist based in London, UK</span></p>
+      <React.Fragment>
+        <div className='text-container'>
+          <p style={{ color: randColor() }} className="text">Louie O'Grady</p>
+          <p style={{ color: randColor() }} className="text">software developer and artist based in London, UK</p>
         </div>
       </React.Fragment>
-
     )
   }
 }

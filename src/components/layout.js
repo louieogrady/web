@@ -1,9 +1,8 @@
 import React from "react"
-import { Link } from 'gatsby'
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Nav from './Nav.js'
-import "./layout.css"
+import "./layout.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,7 +19,7 @@ const Layout = ({ children }) => {
     <div className='layout'>
       <div className='nav-container'>
         <Nav/>
-     </div>
+      </div>
       <main className="content">{children}</main>
     </div>
   )

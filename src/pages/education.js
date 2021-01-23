@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import './education.css';
+import { randColor } from "../components/functions";
 
 let education = [
   {
@@ -26,22 +26,15 @@ let education = [
   },
 ]
 
-
-let colors = ['white', '#fff4c1', '#b1dcff', '#34ebba', '#ffc1cc', '#c1ccff', '#ffd5c1', '#c1fff4', '#ebba34', '#eb5e34', '#34c1eb' ];
-
-function randColor() {
-  return colors[Math.floor(Math.random() * colors.length)];
-}
-
 const Education = () => (
   <Layout>
     <SEO title="education" />
-    <div className="educationContainer"> 
+    <div className="text-container"> 
       {education.map((e) => 
         <div>
-          <p style={{color: randColor()}} className="educationText">{e.name}</p>
-          <p style={{color: randColor()}} className="educationText">{e.dates}</p>
-          <p style={{color: randColor()}} className="educationText">{e.subTitle}</p>
+          <p style={{color: randColor()}} className="text-three">{e.name}</p>
+          <p style={{color: randColor()}} className="text-three">{e.dates}</p>
+          <p style={{color: randColor()}} className="text-three">{e.subTitle}</p>
           <p style={{marginBottom: '45px'}}></p>
         </div>
         )}

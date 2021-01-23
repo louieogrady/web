@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Louie`,
-    description: `Portfolio of Louie O'Grady, software developer`,
+    title: `Louie O'Grady, software developer and artist`,
+    description: `Louie O'Grady, software developer and artist`,
     author: `Louie O'Grady`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
