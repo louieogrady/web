@@ -79,13 +79,6 @@ const projects = [
         photos: ''
     },
     {
-        name: "If we stop now, they'll crush us like bedbugs!",
-        subInfo: "Wyspa Progress Foundation, Gdansk Shipyard, Poland – May 2011",
-        description: 'Month-long residency culminating in a site-specific installation with multichannel soundtrack exploring the role of women in the shipyard strike of 1980 and surrounding events.',
-        link: '',
-        photos: ''
-    },
-    {
         name: "Capillary and Casaubon’s Cabinet (Work in Progress)",
         subInfo: "'Ganze/Teile', Schuckert-Hoefe, Berlin – July-Aug 2010",
         description: 'Site-specific installations with multichannel sound for a group show in a derelict building.',
