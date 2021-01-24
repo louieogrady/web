@@ -1,6 +1,7 @@
 import React from "react"
 import github from "../images/Github-Mark-Light-32px.png"
 import linkedin from "../images/linkedin.png"
+import soundcloud from "../images/soundcloud.png"
 import { onMouseOver, onMouseOut } from "../components/functions";
 class Nav extends React.Component {
   render() {
@@ -29,18 +30,25 @@ class Nav extends React.Component {
             </a>
             <div className="icon" style={{ "marginTop": "2vh", "display": "flex" }}>
               <div style={{ "maxWidth": "5vh" }}>
-                <span>
-                  <a className="github" href="https://www.github.com/louieogrady">
+
+                  <a className="social" href="https://www.github.com/louieogrady">
                     <img style={{ "width": "95%" }} src={github} alt='github-link'></img>
                   </a>
-                </span>
+
               </div>
               <div style={{ "maxWidth": "5vh" }}>
-                <span>
-                  <a className="linkedin" href="https://www.linkedin.com/in/louieogrady">
-                    <img style={{ "marginLeft": "3vh", "marginTop": "0.35vh", "width": "100%" }} src={linkedin} alt='linkedin-link'></img>
+
+                  <a className="social" href="https://www.linkedin.com/in/louieogrady">
+                    <img style={{ "marginTop": "0.35vh", "width": "100%" }} src={linkedin} alt='linkedin-link'></img>
                   </a>
-                </span>
+
+              </div>
+              <div style={{ "maxWidth": "5vh" }}>
+
+                  <a className="social" href="https://www.soundcloud.com/muesliboys">
+                    <img style={{ "marginTop": "0.35vh", "width": "100%" }} src={soundcloud} alt='soundcloud-link'></img>
+                  </a>
+
               </div>
             </div>
           </nav>

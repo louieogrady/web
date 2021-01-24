@@ -5,12 +5,13 @@ import { randColor } from "../components/functions";
 
 export default ({ pageContext: { project } }) => (
   <Layout>
-  <SEO title="projects" />
+    <SEO title="projects" />
     <div className="text-container">
-      <p style={{color: randColor()}} className='text-four'>{project.name}</p>
+      <p style={{ color: randColor() }} className='text-four'>{project.name}</p>
       {/* <img src={project.image} alt={project.name} /> */}
-      <p style={{color: randColor()}} className='text-four'>{project.subInfo}</p>
-      <p style={{color: randColor()}} className='text-four'>{project.description}</p>
+      <p style={{ color: randColor() }} className='text-four'>{project.subInfo}</p>
+      <p style={{ color: randColor() }} className='text-four'>{project.description}</p>
+      {project.link ? <a style={{ color: randColor() }} className='text-four' href={project.link}>{project.link} </a> : null}
     </div>
   </Layout>
-  )
+) 
