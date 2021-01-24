@@ -2,7 +2,7 @@ import React from "react"
 import github from "../images/Github-Mark-Light-32px.png"
 import linkedin from "../images/linkedin.png"
 import soundcloud from "../images/soundcloud.png"
-import { onMouseOver, onMouseOut } from "../components/functions";
+import { onMouseOver, onMouseOut, randColor } from "../components/functions";
 
 const links = [
   {
@@ -26,12 +26,15 @@ const links = [
     path: '/education'
   }
 ]
+
 function navLinks() {
   return links.map((navItem) => {
+    const pathCheck = window.location.pathname === navItem.path 
     return <React.Fragment>
       <a className="nav-link" href={navItem.path}
-        onMouseEnter={event => onMouseOver(event)}
-        onMouseOut={event => onMouseOut(event)}>
+        style={ pathCheck ? { 'background-color' : '#34ebba', 'color' : 'black' } : { 'color' : randColor() } }
+        onMouseEnter={event => pathCheck ? null : onMouseOver(event)}
+        onMouseOut={event => pathCheck ? null : onMouseOut(event)}>
         {navItem.name}
       </a>
       <br></br>

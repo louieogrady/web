@@ -1,19 +1,18 @@
-// import slug  from "./src/components/functions";
-
 const projects = [
     {
         name: "Nature's Switch",
         subInfo: '2015/16',
         description: 'Nature’s Switch is a film which explores red light affects plants in a range of settings at different times during the day and night. Commissioned by Wellcome Collection as part of On light, May 1 – 4 2015. Awards & Screenings: Labocine, 2017, Imagine Science Festival, October 2016, NYC, USA, Shuffle Festival, July 2016, East London, UK MUBI, 2015, Shuffle Festival, August 2015 – Won best short film (‘where we are going’), ASFF, November 2015, York, UK, London Short Film Festival Jan 2016, UK',
-        link: '',
-        photos: ''
+        link: 'https://vimeo.com/144654835',
+        photos: '',
+        // video: 'https://player.vimeo.com/video/144654835'
     },
     {
         name: 'The Truth about The Hague',
         subInfo: 'Galerija Miroslav Kraljevic, Zagreb – Jun 2014-Oct 2015',
         description: "Card game/installation. Part of ‘Shame on You’ cross-Balkan collaboration project. Research residency in 2014 led to new work made and exhibited as part of 'Avoiding Eye Contact' exhibition at the gallery in 2015.",
         link: 'https://www.g-mk.hr',
-        photos: ''
+        photos: '' //'hague.jpg',
     },
     {
         name: 'CCCS – an archive',
@@ -26,15 +25,17 @@ const projects = [
         name: 'Shortcuts through Sønderjylland-Schleswig',
         subInfo: 'Aabenraa Artweek, Denmark – August 2013',
         description: 'Installation. Photograph series and binaural audio. Made during a residency in Denmark and Germany',
-        link: 'https://www.artweek.dk',
-        photos: ''
+        link: 'https://vimeo.com/video/75194704',
+        photos: '',
+        // video: 'https://player.vimeo.com/video/75194704'    
     },
     {
         name: 'Stillaphone',
         subInfo: 'Brass: Pitch, International Brass Festival, Durham – July 2013',
-        description: 'Large-scale sitespecific acoustic installation, commissioned as part of a festival of brass music. www.brassfestival.co.uk',
-        link: 'http://www.brassfestival.co.uk',
-        photos: ''
+        description: 'Large-scale sitespecific acoustic installation, commissioned as part of a festival of brass music.',
+        link: 'https://vimeo.com/video/71262570',
+        photos: '',
+        // video: 'https://player.vimeo.com/video/71262570'
     },
     {
         name: 'Call and Response',
@@ -61,8 +62,9 @@ const projects = [
         name: 'Ambonezenbosje',
         subInfo: "'RE:P.A.I.R.' residency, PeerGrouP, Ambonezenbosje (Oldambt), Netherlands – July 2011",
         description: 'Residency resulting in collaboration with local communities on a series of short films, presented on site in the woods.',
-        link: '',
-        photos: ''
+        link: 'https://vimeo.com/50883087',
+        photos: '',
+        // video: 'https://player.vimeo.com/video/50883087'
     },
     {
         name: "If we stop now, they'll crush us like bedbugs!",

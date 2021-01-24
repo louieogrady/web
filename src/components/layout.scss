@@ -3,6 +3,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   ::-webkit-scrollbar { display:none }
+  width: 100%;
 }
 
 body {
@@ -112,7 +113,6 @@ body {
 
 .nav-link {
   font-family: 'Roboto', sans-serif;
-  color: white;
   font-size: 4.8vh;
   text-decoration: none;
 }
@@ -183,5 +183,16 @@ a {
 .project-name {
   :hover {
       background: red;
+  }
+}
+
+iframe {
+  #document {
+    html {
+      .vp-center {
+        justify-content: flex-start
+      }
+    }
+
   }
 }
