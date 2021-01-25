@@ -15,7 +15,7 @@ const projects = [
         photos: '' //'hague.jpg',
     },
     {
-        name: 'CCCS – an archive',
+        name: 'CCCS – an archive',  
         subInfo: 'Birmingham University / “CCCS 50 Years On” exhibition, MAC Birmingham, UK – Jan-May 2014',
         description: '6-month residency project with the archive of the Centre for Contemporary Cultural Studies. Outcomes include a pamphlet series, installation, performance-intervention, public discussion and a blog.',
         link: 'https://cccs-anarchive.tumblr.com/',

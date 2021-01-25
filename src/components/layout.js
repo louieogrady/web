@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Nav from './Nav.js'
+import Nav from "./Nav.js"
 import "./layout.scss"
 
 const Layout = ({ children }) => {
@@ -16,9 +16,9 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className='layout'>
-      <div className='nav-container'>
-        <Nav/>
+    <div className="layout">
+      <div className="nav-container">
+        <Nav />
       </div>
       <main className="content">{children}</main>
     </div>
@@ -28,7 +28,5 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
-
-
 
 export default Layout

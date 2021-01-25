@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/web`,
   siteMetadata: {
     title: `Louie O'Grady, software developer and artist`,
     description: `Louie O'Grady, software developer and artist`,
@@ -7,18 +8,18 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `data`,
-        path: `${__dirname}/src`
-        // name: `images`,
-        // path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-json`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `data`,
+    //     path: `${__dirname}/src`
+    //     // name: `images`,
+    //     // path: `${__dirname}/src/images`,
+    //   },
+    // },
+    // `gatsby-transformer-json`,
+    // `gatsby-transformer-sharp`,
+    // `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
