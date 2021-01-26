@@ -4,7 +4,7 @@ import linkedin from "../images/linkedin.png"
 import soundcloud from "../images/soundcloud.png"
 import { onMouseOver, onMouseOut, randColor } from "../components/functions"
 import { Link, withPrefix } from "gatsby"
-let path
+
 const links = [
   {
     name: "home",
@@ -12,19 +12,19 @@ const links = [
   },
   {
     name: "about",
-    path: "/about",
+    path: "/about/",
   },
   {
     name: "projects",
-    path: "/proj",
+    path: "/proj/",
   },
   {
     name: "employment",
-    path: "/employment",
+    path: "/employment/",
   },
   {
     name: "education",
-    path: "/education",
+    path: "/education/",
   },
 ]
 
@@ -38,9 +38,13 @@ function navLinks() {
       <React.Fragment>
         <Link
           className="nav-link"
-          to={withPrefix(navItem.path)}
+          to={navItem.path}
           activeStyle={{ "background-color": "#34ebba", "color": "black" }}
-          style={{ color: randColor() }}
+          style={
+            pathCheck
+              ? { "background-color": "#34ebba", color: "black" }
+              : { color: randColor() }
+          }
           onMouseEnter={event => (pathCheck ? null : onMouseOver(event))}
           onMouseOut={event => (pathCheck ? null : onMouseOut(event))}
         >

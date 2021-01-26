@@ -18,8 +18,7 @@ export function randColor() {
 
 export function onMouseOver(event) {
   const el = event.target
-  el.style["background-color"] =
-    colors[Math.floor(Math.random() * colors.length)]
+  el.style["background-color"] = colors[Math.floor(Math.random() * colors.length)]
   el.style.color = "black"
 }
 
