@@ -16,7 +16,7 @@ const images = importAll(
 )
 
 export default ({ pageContext: { project } }) => (
-  <Layout>
+  <Layout className="project">
     <SEO title="projects" />
     {project ? (
       <div className="text-container">
