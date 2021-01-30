@@ -1,5 +1,13 @@
 const projects = [
     {
+        name: "Rhythm Composer",
+        subInfo: '2019',
+        description: 'Rhythm Composer is a browser-based drum machine with 16 step sequencer. Users can pattern, create, edit and add effects to synthesised drums in real-time. Created with React and Tone.js.',
+        link: 'https://rhythm-composer.herokuapp.com/',
+        photos: '',
+        // video: 'https://player.vimeo.com/video/144654835'
+    },
+    {
         name: "Nature's Switch",
         subInfo: '2015/16',
         description: 'Nature’s Switch is a film which explores red light affects plants in a range of settings at different times during the day and night. Commissioned by Wellcome Collection as part of On light, May 1 – 4 2015. Awards & Screenings: Labocine, 2017, Imagine Science Festival, October 2016, NYC, USA, Shuffle Festival, July 2016, East London, UK MUBI, 2015, Shuffle Festival, August 2015 – Won best short film (‘where we are going’), ASFF, November 2015, York, UK, London Short Film Festival Jan 2016, UK',
